@@ -1,0 +1,19 @@
+//Add Tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//Add Font Awesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+//Sitewide partials
+@import "sitewide-partials/body";
+@import "sitewide-partials/containers";
+
+//Sitewide components
+@import "sitewide-components/customBtns";
+@import "sitewide-components/pageHero";
+@import "sitewide-components/pageMain";

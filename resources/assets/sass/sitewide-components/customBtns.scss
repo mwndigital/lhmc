@@ -1,0 +1,11 @@
+a.darkSlateBtn,
+button.darkSlateBtn,
+input.darkSlateBtn {
+    @apply bg-slate-700 rounded-md text-white text-center py-2 px-4 text-base font-medium ring-0 outline-none ease-in-out duration-500 hover:bg-slate-400 hover:text-white hover:ring-0 hover:outline-none hover:no-underline;
+}
+
+a.confirm-log-clear-btn,
+button.confirm-log-clear-btn,
+input.confirm-log-clear-btn {
+    @apply bg-yellow-500 rounded-md text-black text-center py-2 px-4 text-base font-medium ring-0 outline-none ease-in-out duration-500 hover:bg-yellow-300 hover:text-black hover:ring-0 hover:outline-none hover:no-underline;
+}

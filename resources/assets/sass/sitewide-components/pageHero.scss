@@ -1,0 +1,12 @@
+.pageHero {
+    @apply my-4 mx-4;
+
+    .inner {
+        @apply flex flex-col md:flex-row gap-6 bg-white rounded-lg min-h-[200px] py-6 px-6 min-w-full md:max-w-7xl mx-auto items-center;
+
+        h1 {
+            @apply text-4xl text-black font-bold;
+        }
+
+    }
+}

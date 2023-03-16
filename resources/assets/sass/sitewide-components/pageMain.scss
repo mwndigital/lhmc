@@ -1,0 +1,118 @@
+.pageMain {
+    @apply my-4 mx-4;
+
+    .inner {
+        @apply flex flex-col gap-6 bg-white rounded-lg min-h-[200px] py-6 px-6 min-w-full md:max-w-7xl mx-auto;
+
+        .box {
+            @apply flex flex-col rounded-md shadow-md shadow-black/20 border border-transparent text-center min-h-[150px] ease-in-out duration-500 hover:shadow-none hover:border hover:border-black/20;
+
+            a {
+                @apply block h-full w-full flex items-center justify-center;
+
+                h4 {
+                    @apply text-black text-2xl font-medium;
+                }
+            }
+        }
+
+        .dataTables_wrapper {
+            .dataTables_length {
+                @apply text-black font-normal text-base;
+                margin-bottom: 25px;
+                select {
+                    background-position: right;
+                    min-width: 75px;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+            }
+            .dataTables_filter {
+                margin-bottom: 25px;
+                label {
+                    @apply text-base font-normal text-black;
+                }
+                input[type='search'] {
+                    @apply ml-2 rounded-md outline-none ring-0 border border-slate-700 ease-in-out duration-500 focus:border-slate-400 focus:outline-none focus:ring-0;
+                }
+            }
+            .dataTables_info {
+                @apply text-black font-normal text-base;
+                margin-top: 25px;
+            }
+            .dataTables_paginate {
+                @apply text-black font-normal text-base;
+                margin-top: 25px;
+            }
+        }
+
+        table {
+            @apply min-w-full;
+            thead {
+                @apply border-b border-b-black/20;
+                tr {
+                    th, td {
+                        @apply text-black text-lg font-bold text-left py-2;
+
+                        &.actions {
+                            @apply whitespace-nowrap  text-right pr-[1.5rem] cursor-default;
+
+                            &::before,
+                            &::after{
+                                @apply hidden;
+
+                                pointer-events: none;
+                            }
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    @apply bg-white;
+
+                    &:nth-of-type(odd) {
+                        @apply bg-gray-100;
+                    }
+                    td {
+                        @apply text-black text-base font-normal text-left py-3 px-2;
+                    }
+                    td.actions {
+                        @apply px-6 py-3 whitespace-nowrap text-sm text-slate-700 flex gap-2 justify-end;
+
+                        a.viewBtn {
+                            @apply bg-slate-700 rounded-md text-white text-base py-3 px-6 text-center ease-in-out duration-500 hover:bg-slate-400 hover:outline-none hover:no-underline;
+                        }
+                        a.edit {
+                            @apply bg-gray-700 rounded-md text-white text-base py-3 px-6 text-center ease-in-out duration-500 hover:bg-gray-400 hover:outline-none hover:no-underline;
+                        }
+                        form.delete {
+                            @apply bg-red-700 rounded-md text-white text-base py-3 px-6 text-center ease-in-out duration-500 hover:bg-red-400 hover:outline-none hover:no-underline;
+                        }
+                    }
+                }
+            }
+        }
+        form:not(.delete) {
+            @apply block w-full min-w-full;
+            .row {
+                @apply flex flex-col md:flex-row gap-6 mb-4 w-full;
+
+                label {
+                    @apply block w-full text-black text-lg font-medium mb-2 text-left;
+                }
+                input[type='text'],
+                input[type='email'],
+                input[type='tel'],
+                input[type='number'],
+                input[type='date'] {
+                    @apply border border-slate-200 rounded-md h-[40px] block w-full outline-none ring-0 text-black px-4 focus:border-slate-400 focus:outline-none focus:ring-0;
+                }
+
+                button[type='submit'] {
+                    @apply mt-6 font-medium text-lg;
+                }
+            }
+        }
+    }
+}
