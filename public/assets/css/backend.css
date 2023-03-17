@@ -1,6 +1,4 @@
 header {
-  position: fixed;
-  top: 0px;
   z-index: 50;
   display: flex;
   width: 100%;
@@ -8,6 +6,7 @@ header {
   gap: 1.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
 }
 header .topBar {
   display: flex;
@@ -53,8 +52,6 @@ header .navbar {
   display: flex;
   width: 100%;
   flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
   justify-content: space-between;
 }
 header .navbar .navbar-collapse {
@@ -71,9 +68,8 @@ header .navbar .navbar-collapse ul.navbar-nav {
   display: flex;
   width: 100%;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 2rem;
+  padding-bottom: 0.5rem;
 }
 @media (min-width: 768px) {
   header .navbar .navbar-collapse ul.navbar-nav {
@@ -81,6 +77,9 @@ header .navbar .navbar-collapse ul.navbar-nav {
   }
 }
 header .navbar .navbar-collapse ul.navbar-nav li a {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -90,10 +89,16 @@ header .navbar .navbar-collapse ul.navbar-nav li.dropdown ul.dropdown-menu {
   width: auto;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+header .navbar .navbar-collapse ul.navbar-nav li.dropdown ul.dropdown-menu li {
+  margin-bottom: 0.5rem;
 }
 header .navbar .navbar-collapse ul.navbar-nav li.dropdown ul.dropdown-menu li a {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }

@@ -1,5 +1,5 @@
 .navbar {
-  @apply relative flex w-full flex-nowrap items-center justify-between justify-center;
+  @apply relative flex w-full flex-nowrap justify-between;
 
   button.navbar-toggler {
 
@@ -7,20 +7,21 @@
   .navbar-collapse {
     @apply w-full flex flex-col md:flex-row;
     ul.navbar-nav {
-      @apply w-full flex flex-col md:flex-row gap-8 items-center justify-center;
+      @apply w-full flex flex-col md:flex-row gap-8 pb-2;
       li {
         a {
-          @apply text-white;
+          @apply text-white font-semibold text-lg;
         }
         &.dropdown {
           a.dropdown-toggle {
 
           }
           ul.dropdown-menu {
-            @apply h-0 w-auto hidden py-2 px-2;
+            @apply h-0 w-auto hidden py-2 px-3;
             li {
+              @apply mb-2;
               a {
-                @apply text-black;
+                @apply text-black text-base font-normal;
               }
             }
             &.show {

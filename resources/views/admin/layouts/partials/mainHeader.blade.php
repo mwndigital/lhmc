@@ -5,6 +5,16 @@
         </button>
         <div class="collapse navbar-collapse" id="backendMainMenu">
             <ul class="navbar-nav">
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-plus"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </li>
                 <li>
                     <a href="">Dashboard</a>
                 </li>
@@ -24,6 +34,16 @@
                     <ul class="dropdown-menu">
                         <li><a href="">All Clients</a></li>
                         <li><a href="">Add new client</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Settings
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">All Settings</a></li>
+                        <li><a href="">General Settings</a></li>
                     </ul>
                 </li>
             </ul>

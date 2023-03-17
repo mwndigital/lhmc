@@ -30,7 +30,7 @@
     </head>
     <body class="font-sans antialiased">
         <header>
-            <div class="flex flex-row w-full mb-2">
+            <div class="flex flex-row w-full">
                 @include('admin.layouts.partials.topBar')
             </div>
             <div class="flex flex-row w-full">
