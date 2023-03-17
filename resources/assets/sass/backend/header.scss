@@ -1,0 +1,7 @@
+header {
+  @apply bg-slate-700 flex flex-col gap-6 fixed top-0 w-full z-50;
+
+  @import "../backend/partials/topBar";
+  @import "../backend/partials/mainHeader";
+
+}

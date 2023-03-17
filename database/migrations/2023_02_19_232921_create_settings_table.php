@@ -22,7 +22,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        DB::table('settings')->insert([
+        /*DB::table('settings')->insert([
             'key' => 'site_name',
             'value' => 'Larabase23',
             'created_at' => Carbon::now(),
@@ -33,7 +33,7 @@ return new class extends Migration
             'value' => 'http://localhost',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
-        ]);
+        ]);*/
 
     }
 

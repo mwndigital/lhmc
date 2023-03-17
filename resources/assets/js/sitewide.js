@@ -1,13 +1,6 @@
 
 $(document).ready(function(){
-    $('header .navbar .sidebar-toggler').click(function(){
-        $('.sidebar').toggleClass('open', 1000, );
-        $('.contentMain').toggleClass('full', 1200);
-    });
-    $('.sidebar .sidebarCollapseBtn').click(function(){
-        $('.sidebar').toggleClass('open', 1000, );
-        $('.contentMain').toggleClass('full', 1200);
-    });
+
 
     $('.confirm-delete-btn').click(function(event){
         var form =  $(this).closest("form");

@@ -22537,10 +22537,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/assets/sass/admin.scss":
-/*!******************************************!*\
-  !*** ./resources/assets/sass/admin.scss ***!
-  \******************************************/
+/***/ "./resources/assets/sass/backend.scss":
+/*!********************************************!*\
+  !*** ./resources/assets/sass/backend.scss ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22550,36 +22550,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/assets/sass/client.scss":
-/*!*******************************************!*\
-  !*** ./resources/assets/sass/client.scss ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./resources/assets/sass/staff.scss":
-/*!******************************************!*\
-  !*** ./resources/assets/sass/staff.scss ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./resources/assets/sass/user.scss":
-/*!*****************************************!*\
-  !*** ./resources/assets/sass/user.scss ***!
-  \*****************************************/
+/***/ "./resources/assets/sass/frontend.scss":
+/*!*********************************************!*\
+  !*** ./resources/assets/sass/frontend.scss ***!
+  \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22929,10 +22903,8 @@ process.umask = function() { return 0; };
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/assets/js/app": 0,
-/******/ 			"assets/css/user": 0,
-/******/ 			"assets/css/staff": 0,
-/******/ 			"assets/css/client": 0,
-/******/ 			"assets/css/admin": 0,
+/******/ 			"assets/css/frontend": 0,
+/******/ 			"assets/css/backend": 0,
 /******/ 			"assets/css/app": 0
 /******/ 		};
 /******/ 		
@@ -22983,12 +22955,10 @@ process.umask = function() { return 0; };
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["assets/css/user","assets/css/staff","assets/css/client","assets/css/admin","assets/css/app"], () => (__webpack_require__("./resources/assets/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/user","assets/css/staff","assets/css/client","assets/css/admin","assets/css/app"], () => (__webpack_require__("./resources/assets/sass/app.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/user","assets/css/staff","assets/css/client","assets/css/admin","assets/css/app"], () => (__webpack_require__("./resources/assets/sass/admin.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/user","assets/css/staff","assets/css/client","assets/css/admin","assets/css/app"], () => (__webpack_require__("./resources/assets/sass/client.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/user","assets/css/staff","assets/css/client","assets/css/admin","assets/css/app"], () => (__webpack_require__("./resources/assets/sass/staff.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/css/user","assets/css/staff","assets/css/client","assets/css/admin","assets/css/app"], () => (__webpack_require__("./resources/assets/sass/user.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/frontend","assets/css/backend","assets/css/app"], () => (__webpack_require__("./resources/assets/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/frontend","assets/css/backend","assets/css/app"], () => (__webpack_require__("./resources/assets/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/frontend","assets/css/backend","assets/css/app"], () => (__webpack_require__("./resources/assets/sass/backend.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/css/frontend","assets/css/backend","assets/css/app"], () => (__webpack_require__("./resources/assets/sass/frontend.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

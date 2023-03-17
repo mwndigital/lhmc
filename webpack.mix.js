@@ -19,10 +19,8 @@ mix.js('resources/assets/js/app.js', 'public/assets/js')
     .js('resources/assets/js/staff.js', 'public/assets/js')
     .js('resources/assets/js/user.js', 'public/assets/js')
     .sass('resources/assets/sass/app.scss', 'public/assets/css')
-    .sass('resources/assets/sass/admin.scss', 'public/assets/css')
-    .sass('resources/assets/sass/client.scss', 'public/assets/css')
-    .sass('resources/assets/sass/staff.scss', 'public/assets/css')
-    .sass('resources/assets/sass/user.scss', 'public/assets/css')
+    .sass('resources/assets/sass/backend.scss', 'public/assets/css')
+    .sass('resources/assets/sass/frontend.scss', 'public/assets/css')
     .options({
         processCssUrls: false,
         postCss: [tailwindcss('./tailwind.config.js')],

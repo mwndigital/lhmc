@@ -1,12 +1,9 @@
-<nav class="navbar">
+<div class="topBar">
     <div class="container-fluid">
         <a href="" class="navbar-brand">
             <x-application-logo class="block h-10 w-auto fill-current text-white" />
         </a>
         <div class="rightItems">
-            <button class="sidebar-toggler mr-0 lg:mr-4" type="button">
-                <i class="fa-solid fa-bars"></i>
-            </button>
             <ul class="hidden lg:block">
                 <li>
                     <a href="">
@@ -28,11 +25,11 @@
                             </button>
                         </x-slot>
                         <x-slot name="content" class='bg-slate-800'>
-                            <x-dropdown-link href="{{ route('admin.notes.index') }}">My Notes</x-dropdown-link>
+                            <x-dropdown-link href="">My Notes</x-dropdown-link>
                             <x-dropdown-link href="">My Todos</x-dropdown-link>
                             <x-dropdown-link href="">Activity Log</x-dropdown-link>
                             <x-dropdown-link href="">My Account</x-dropdown-link>
-                            {{ Auth::user()->email }}
+                            <x-dropdown-link href="">{{ Auth::user()->email }}</x-dropdown-link>
                             <!-- Authentication -->
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
@@ -49,4 +46,4 @@
             </ul>
         </div>
     </div>
-</nav>
+</div>

@@ -1,0 +1,32 @@
+.topBar {
+  @apply w-full flex flex-row items-center;
+  div.rightItems {
+    @apply flex flex-row ml-auto;
+
+    ul {
+      @apply flex flex-row gap-6;
+      li {
+        a,
+        button {
+          @apply text-white text-lg;
+        }
+        button.dropBtn {
+          @apply flex flex-row w-full;
+
+          &::after {
+
+            content: '\f0d7';
+            display: inline-block;
+            font-family: "Font Awesome 6 Free";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 900;
+            margin-left: 5px;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+          }
+        }
+      }
+    }
+  }
+}

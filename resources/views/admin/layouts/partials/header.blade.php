@@ -13,7 +13,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
         <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/admin.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/backend.css') }}">
 
         <!-- Scripts -->
         <script src="{{ asset('assets/js/app.js') }}"></script>
@@ -30,6 +30,14 @@
     </head>
     <body class="font-sans antialiased">
         <header>
-            @include('admin.layouts.partials.mainNavs.topbarNav')
+            <div class="flex flex-row w-full mb-2">
+                @include('admin.layouts.partials.topBar')
+            </div>
+            <div class="flex flex-row w-full">
+                @include('admin.layouts.partials.mainHeader')
+            </div>
+
+
         </header>
         @include('sweetalert::alert')
+        <main class="mainContentWrap">
